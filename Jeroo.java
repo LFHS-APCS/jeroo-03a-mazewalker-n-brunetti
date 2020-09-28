@@ -18,8 +18,25 @@ public class Jeroo extends JerooBase {
      *         goes to   >
      *     ^W            W
      */
-    public void followWallRight() {
+    
 
+
+
+    public void followWallRight() {
+if (isWater(AHEAD)&&(isWater(RIGHT))){
+      turn(LEFT);
+    }
+
+if (isClear(AHEAD)){
+  hop();
+
+}
+
+if (isWater(RIGHT)&&(isClear(AHEAD))){
+  hop();
+  turn(RIGHT);
+  hop();
+}
     }
 
     

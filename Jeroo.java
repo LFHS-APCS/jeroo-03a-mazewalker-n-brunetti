@@ -36,14 +36,14 @@ if (isClear(AHEAD)){
 
 
     public void followWallRight() {
-while(!isFlower(HERE){
-    if (isWater(AHEAD)&&(isWater(RIGHT))){
+while(!isFlower(HERE)){
+    if ((isWater(AHEAD))&&(isWater(RIGHT))){
       turn(LEFT);
     }
 
 if (isClear(AHEAD)){
     hop();
-   if(isClear(RIGHT){
+   if(isClear(RIGHT)){
        turn(RIGHT);
        hop();
    }else{ 

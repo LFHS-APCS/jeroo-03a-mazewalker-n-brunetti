@@ -28,7 +28,7 @@ public class Jeroo extends JerooBase {
       turn(LEFT);
     }else{
 
-if (isClear(AHEAD)){
+if (!isWater(AHEAD)){
     hop();
    if(isClear(RIGHT)){
        turn(RIGHT);

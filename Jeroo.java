@@ -19,7 +19,7 @@ public class Jeroo extends JerooBase {
      *     ^W            W
      */
    
-if ((isWater(AHEAD))&&(isWater(RIGHT))){
+if (isWater(AHEAD)&&isWater(RIGHT)){
       turn(LEFT);
     }
 

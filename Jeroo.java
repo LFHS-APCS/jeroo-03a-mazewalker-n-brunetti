@@ -20,22 +20,13 @@ public class Jeroo extends JerooBase {
      */
    
 
-   turn(LEFT);
-    
-
-   hop();
-   
-    hop();
-   turn(RIGHT);
-   hop();
- 
 
 
     public void followWallRight() {
-while(!isFlower(HERE)){
+
     if ((isWater(AHEAD))&&(isWater(RIGHT))){
       turn(LEFT);
-    }
+    }else{
 
 if (isClear(AHEAD)){
     hop();
@@ -44,9 +35,8 @@ if (isClear(AHEAD)){
        hop();
    }else{ 
        ;
-   }
-   }
-   }
+   }}
+    }
     }
 
     
@@ -55,7 +45,9 @@ if (isClear(AHEAD)){
      * HINT:  Use followWallRight
      */
     public void mazeWalker() {
+        while(!isFlower(HERE)){
         followWallRight();
+        }
     }
     
     

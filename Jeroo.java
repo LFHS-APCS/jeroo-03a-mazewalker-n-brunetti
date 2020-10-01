@@ -19,19 +19,20 @@ public class Jeroo extends JerooBase {
      *     ^W            W
      */
    
-if (isWater(AHEAD)&&(isWater(RIGHT))){
+if ((isWater(AHEAD))&&(isWater(RIGHT))){
       turn(LEFT);
     }
 
 if (isClear(AHEAD)){
     hop();
-   if(isClear(RIGHT){
+   if(isClear(RIGHT)){
        turn(RIGHT);
        hop();
    }else{ 
        ;
    }  
 }
+      }
 
 
 

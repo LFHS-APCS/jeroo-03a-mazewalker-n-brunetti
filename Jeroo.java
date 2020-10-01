@@ -18,7 +18,7 @@ public class Jeroo extends JerooBase {
      *         goes to   >
      *     ^W            W
      */
-    
+/**    
 if (isWater(AHEAD)&&(isWater(RIGHT))){
       turn(LEFT);
     }
@@ -32,7 +32,7 @@ if (isClear(AHEAD)){
        ;
    }  
 }
-
+*/
 
 
     public void followWallRight() {
